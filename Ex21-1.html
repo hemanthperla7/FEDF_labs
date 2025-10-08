@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bakery Promo • Basic Structure</title>
+  <style>
+    body {font-family: system-ui, Arial, sans-serif; margin: 0; line-height: 1.6;}
+    header, nav, section, footer {padding: 1rem 1.25rem;}
+    header {background: #f7e7d3;}
+    nav {background: #ffe9c4;}
+    main {padding: 1.25rem;}
+    footer {background: #222; color: #fff; text-align: center;}
+    .container {max-width: 1100px; margin: 0 auto;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Butter & Bloom Bakery</h1>
+      <p>Freshly baked breads, pastries, and cakes—daily.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="#">Home</a> •
+      <a href="#">Menu</a> •
+      <a href="#">About</a> •
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section aria-labelledby="featured">
+      <h2 id="featured">Featured Items</h2>
+      <article>
+        <h3>Almond Croissant</h3>
+        <p>Flaky, buttery, and filled with almond cream.</p>
+      </article>
+      <article>
+        <h3>Sourdough Loaf</h3>
+        <p>Slow-fermented for deep flavor and a crisp crust.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="visit">
+      <h2 id="visit">Visit Us</h2>
+      <p>123 Sunrise Lane, Sweet City</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="y"></span> Butter & Bloom Bakery</p>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-bottom: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.buynow:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 8px;
+    font-weight: bold;
+}
